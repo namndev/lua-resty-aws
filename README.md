@@ -7,7 +7,6 @@ This library implements request signing using the AWS Signature Version 4 specif
 ## Installation
 
 ```bash
-sudo luarocks install shell-games
 git clone https://github.com/namndbka/lua-resty-aws.git
 cp -R lua-resty-aws/lib/resty <your_lua_lib_path>
 ```
