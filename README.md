@@ -92,3 +92,5 @@ ngx.say(cres)
 local file, status = s3:download_file('bucket_name', 'key')
 ngx.log(ngx.INFO, "download_file status: ", status)
 ```
+
+> Note: you have to set either s3-<region> or s3 as subdomain of amazonaws.com depending on your need. s3 will use us-east-1 region.
