@@ -6,12 +6,20 @@ This library implements request signing using the [AWS Signature Version 4](http
 
 ## Installation
 
+This package require some other packages
+
 ```bash
+sudo luarocks install luasec
+sudo luarocks install lua-json
+sudo luarocks install lua-erento-hmac
+sudo luarocks install lua-resty-string
+sudo luarocks install xml2lua
+
 git clone https://github.com/namndbka/lua-resty-aws.git
 cp -R lua-resty-aws/lib/resty <your_lua_lib_path>
 ```
 
-## Example
+## Usage
 
 Currently, this library support some method of `aws acm` and `aws s3`.
 
@@ -94,3 +102,8 @@ ngx.log(ngx.INFO, "download_file status: ", status)
 ```
 
 > Note: you have to set either s3-<region> or s3 as subdomain of amazonaws.com depending on your need. s3 will use us-east-1 region.
+
+## Link Resource
+- [`luasec`](https://github.com/brunoos/luasec)
+- [`xml2lua`](https://github.com/manoelcampos/xml2lua)
+- [`lua-erento-hmac`](https://github.com/LuaDist2/lua-erento-hmac)
