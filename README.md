@@ -2,7 +2,7 @@
 AWS ACM and S3 for OpenResty + Lua
 
 ## Overview
-This library implements request signing using the AWS Signature Version 4 specification. This signature scheme is used by nearly all AWS services.
+This library implements request signing using the [AWS Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) specification. This signature scheme is used by nearly all AWS services.
 
 ## Installation
 
